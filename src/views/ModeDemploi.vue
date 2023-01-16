@@ -1,5 +1,5 @@
 <template>
-  <div class="content mx-[10%] md:mx-[20%] lg:mx-[25%] xl:mx-[30%] 2xl:mx-[35%] mt-8">
+  <div class="modeEmploi mx-[10%] md:mx-[20%] lg:mx-[25%] xl:mx-[30%] 2xl:mx-[35%] mt-8">
     <h1 class="text-3xl font-bold">Mode d'emploi</h1>
     <p>Le générateur de posts est un outil qui permet de générer des images pour des posts pour les réseaux sociaux.</p>
 
@@ -22,16 +22,16 @@
 
 <script>
 export default {
-
+    name: 'ModeDemploi',
 }
 </script>
 
 <style>
-    .content a, .content h1, .content h2 {
+    .modeEmploi a, .modeEmploi h1, .modeEmploi h2 {
         color: #09709B;
     }
 
-    img {
+    .modeEmploi img {
         margin-bottom: 2rem;
         margin-top: 0.5em;
         border: 2px solid #09709B;
