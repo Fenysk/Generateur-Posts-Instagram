@@ -1,4 +1,4 @@
-# template-posts
+# Générateur de posts
 
 ## Project setup
 ```

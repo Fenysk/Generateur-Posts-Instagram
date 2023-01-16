@@ -7,7 +7,11 @@
     "build": "vue-cli-service build"
   },
   "dependencies": {
+    "canvas2image": "^1.0.5",
     "core-js": "^3.8.3",
+    "dom-to-image": "^2.6.0",
+    "html-to-image": "^1.11.4",
+    "html2canvas": "^1.4.1",
     "vue": "^3.2.13",
     "vue-router": "^4.0.3"
   },
