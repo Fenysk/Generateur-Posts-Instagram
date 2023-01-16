@@ -33,11 +33,26 @@
         </div>
       </div>
 
-      <button @click="convertirImage">Convertir en image</button>
-      <div class="flex flex-row flex-wrap">
-        <div v-for="image in imagesFinies" :key="image" class="flex flex-col">
+      <button class="
+      bg-[#09709b]
+      text-white
+      font-bold
+      px-4
+      py-2
+      rounded
+      " @click="convertirImage">Générer une image</button>
+      <div class="flex flex-row w-full flex-wrap mt-2">
+        <div v-for="image in imagesFinies" :key="image" class="flex flex-col mr-2 mb-4">
           <img :src="image" class="h-32 w-32 object-cover border">
-          <button @click="downloadImage(image)">Télécharger</button>
+          <button class="
+          bg-[#7984C4]
+          text-white
+          font-bold
+          px-4
+          py-2
+          rounded
+          mt-2
+          " @click="downloadImage(image)">Télécharger</button>
         </div>
       </div>
     </div>

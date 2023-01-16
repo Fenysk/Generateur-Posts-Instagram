@@ -6,8 +6,11 @@
     <div class="etiquette">
       <h2 class="sousTitre" v-html="sousTitre"></h2>
       <div class="produit">
-        <div class="flex overflow-hidden justify-around">
-            <img  v-for="image in images" :key="image" :src="image">
+        <div class="flex justify-around">
+            <div v-for="image in images" :key="image" class="relative">
+                <img :src="image" />
+                <div class="rond absolute"></div>
+            </div>
         </div>
         <p class="description" v-html="description"></p>
       </div>
@@ -114,11 +117,28 @@ export default {
 }
 
 .produit img {
-  height: 150px;
+    height: 150px;
+    z-index: 1;
+
+    position: relative;
+}
+
+.produit .rond {
+  content: " ";
+  display: block;
+  width: 70px;
+  height: 30px;
+  border-radius: 100%;
+  background-color: #7cb5d851;
+  bottom: -10px;
+  right: 20px;
 }
 
 .produit .description {
   font-size: 1.2rem;
+  margin-top: 15px;
+  padding: 0 10%;
+  text-align: center;
 }
 
 .produit .description strong {
@@ -127,7 +147,7 @@ export default {
   position: relative;
 }
 
-.produit .description strong:after {
+.produit .description strong::after {
   content: " ";
   position: absolute;
   display: block;
